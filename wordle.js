@@ -12972,9 +12972,14 @@ let words = ["aahed",
     "zymic"];
 
 
+//interval calls update every second
+setInterval(Update, 1000);
 
 Update();
 
+// document.querySelector(".positionInput").addEventListener("change", function () {
+//     alert("sadfasdf")
+// });
 
 document.querySelector(".update").addEventListener("click", function () {
     Update();
@@ -13000,16 +13005,22 @@ function Update() {
 
             if (notInWord) {
                 wordsTemp = filterWordsByNotLetter(wordsTemp, letter);
+                //asdffsdasfd
             }
+
             if (inWord) {
+                cell.cells[3].firstChild.style.display  = "block";
                 if (position != "") {
                     wordsTemp = filterWordsByPosition(wordsTemp, letter, position);
                 } else {
                     wordsTemp = filterWordsByLetter(wordsTemp, letter);
                 }
+            }else{
+                cell.cells[3].firstChild.style.display  = "none";
             }
+
+
         }
-        console.log(letter, notInWord, inWord, position);
     }
 
     wordsTemp = wordsTemp.map(word => `<p> ${word} <p>`)
