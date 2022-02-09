@@ -1,2 +1,0 @@
-# maximiliansteiger.github.io
-#website
