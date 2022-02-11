@@ -12,17 +12,32 @@
 </head>
 
 <body>
-    <div class="outerContent">
-        <div class="content">
-            <h1 id="headline">ENTER TEXT AND GET YOUR COLOR</h1>
-            <div>
-                <input type="text" name="name" value="" placeholder="text" id="name">
-                <input type="button" id="submitButton" value="generate">
-            </div>
-            <input class="colorField" type="text" value="rgba(255,255,255,1)" id="colorCodeRgb">
-            <button class="colorCopy" onclick="copyRgb()">copy RBGA</button>
-            <br>
-            <input class="colorField" type="text" value="#FFFFFF" id="colorCodeHex">
+
+
+    <!-- <div class="content"> -->
+<!-- 
+<div class="round">
+</div>
+
+<h1 id="headline">NAME TO COLOR</h1> -->
+    <div class="centerTextInput">
+        <input type="text" name="name" value="" placeholder="text" id="name">
+
+        <input type="button" id="submitButton" value="GO">
+
+    </div>
+
+
+
+    </div>
+
+    <div class="halfPage">
+
+        <div class="contentInside">
+            <input class="colorField"  type="text" value="rgba(255,255,255,1)" id="colorCodeRgb">
+            <button class="colorCopy"  onclick="copyRgb()">copy RBGA</button>
+
+            <input class="colorField"  type="text" value="#FFFFFF" id="colorCodeHex">
             <button class="colorCopy" onclick="copyHex()">copy HEX</button>
 
             <p>Opacity</p>
@@ -30,10 +45,10 @@
                 id="opacityText">
             <input type="range" value="1" min="0" max="1" step="0.01" onChange="updateOpacity(this.value)"
                 id="opacityRange">
-
-
         </div>
+
     </div>
+
     <script src="./nameToColor.js" async defer></script>
 
 </body>

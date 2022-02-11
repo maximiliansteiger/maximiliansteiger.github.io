@@ -1,51 +1,102 @@
-* {
-    text-align: center;
-    font-family: monospace;
-}
-
+html,
 body {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-.outerContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
-.content {
-    background-color: #333;
-    justify-content: center;
-    padding: 6vh;
-    box-shadow: 3px 4px 5px #333;
-    border-radius: 20px; 
-    margin-top: 10%;
-}
-
-#name,
-#submitButton {
-
-    height: 4vh;
-    border: solid 0.2vh #333;
-    border-radius: 2vh;
-
+.halfPage {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #121213;
+    z-index: -40;
 }
 
 #name {
-    width: 30%;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    display: inline;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-left: 0;
 }
 
-#button {
-    width: 40vh, ;
+#submitButton {
+    background-color: #4c53af;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10vh;
+    
+    border: .1vh solid #ccc;
 }
 
-.colorField {
-    /* width: 25%; */
-    margin: 4vh 2vh 0vh -4vh;
+.colorCopy{
+    background-color: #4c53af;
+    color: white;
+    padding: 14px 20px;
+    margin: .8vh 0;
+    border: none;
+    cursor: pointer;
+    
+}
+.colorField,#opacityText {
+    padding: 12px 20px;
+    margin: .8vh 0;
+    box-sizing: border-box;
+    display: inline;
+    text-align: center;
+    border: .1vh solid #ccc;
+    margin-left: 0;
 }
 
-.colorCopy {
-    /* width: 5%; */
-    margin: 0vh 4vh 0vh 0vh;
+
+
+.centerTextInput {
+    position: fixed;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vh;
+
+}
+
+#headline{
+    text-align: center;
+    width: 25%;
+    height: auto;
+    margin: 1vh auto;
+    margin-top: 5vh;
+}
+
+.contentInside{
+    width: 100%;
+    height: auto;
+    margin-top: 10vh ;
+}
+p{
+    color: white;
+    font-size: 5vh;
+}
+.round{
+
+    position: fixed;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #121213;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    border-radius: 1000%;
+    z-index: -2;
 }

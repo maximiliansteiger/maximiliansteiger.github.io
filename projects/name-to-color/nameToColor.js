@@ -18,7 +18,7 @@ function start(r, g, b,a) {
     document.getElementById("colorCodeRgb").value = `rgba(${r},${g},${b},${a})`;
     document.getElementById("colorCodeHex").value = `#${componentToHex(r) + componentToHex(g) + componentToHex(b) + componentToHex(Math.round(a * 255))}`;
     document.body.style.backgroundColor = `rgba(${r},${g},${b},${a})`;
-    document.getElementById("headline").style = `text-shadow:2px 2px 2px rgba(${r},${g},${b},${a})`;
+    // document.getElementById("headline").style = `text-shadow:2px 2px 2px rgba(${r},${g},${b},${a})`;
     document.getElementById("opacityText").value = `${a}`;
     document.getElementById("opacityRange").value = `${a}`;
 }
