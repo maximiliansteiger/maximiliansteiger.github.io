@@ -1,0 +1,80 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 2vh;
+    background-color: #121213;
+    color: #D2D5D6;
+}
+
+
+.content {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.content div {
+    border: solid .2vh #D2D5D6;
+    border-radius: 1vh;
+    display: inline-block;
+    text-align: center;
+    height: 100;
+    margin: 3vh;
+    padding: 2vh;
+
+}
+
+h4 {
+    padding: 0vh 30vh;
+}
+
+span {
+    color: red;
+}
+
+/* button */
+
+#StartButton1,
+#StartButton2,
+#StartButton3,
+#StartButton4 {
+    background-color: #30f41e77;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: .2vh;
+    color: #D2D5D6;
+}
+
+
+#StartButton1:hover,
+#StartButton2:hover,
+#StartButton3:hover,
+#StartButton4:hover {
+    opacity: 1
+}
+
+/* input */
+#patternInput,
+#loopInput,
+#stopValue,
+#stopvalueRandom {
+    background-color: #30f41e77;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: .2vh;
+    color: #D2D5D6;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #D2D5D6;
+  }

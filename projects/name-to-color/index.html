@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="outerContent">
+        <div class="content">
+            <h1 id="headline">ENTER TEXT AND GET YOUR COLOR</h1>
+            <div>
+                <input type="text" name="name" value="" placeholder="text" id="name">
+                <input type="button" id="submitButton" value="generate">
+            </div>
+            <input class="colorField" type="text" value="rgba(255,255,255,1)" id="colorCodeRgb">
+            <button class="colorCopy" onclick="copyRgb()">copy RBGA</button>
+            <br>
+            <input class="colorField" type="text" value="#FFFFFF" id="colorCodeHex">
+            <button class="colorCopy" onclick="copyHex()">copy HEX</button>
+
+            <p>Opacity</p>
+            <input type="number" value="1" min="0" max="1" step="0.01" onChange="updateOpacity(this.value)"
+                id="opacityText">
+            <input type="range" value="1" min="0" max="1" step="0.01" onChange="updateOpacity(this.value)"
+                id="opacityRange">
+
+
+        </div>
+    </div>
+    <script src="./nameToColor.js" async defer></script>
+
+</body>
+
+</html>

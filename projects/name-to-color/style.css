@@ -1,0 +1,51 @@
+* {
+    text-align: center;
+    font-family: monospace;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.outerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: #333;
+    justify-content: center;
+    padding: 6vh;
+    box-shadow: 3px 4px 5px #333;
+    border-radius: 20px; 
+    margin-top: 10%;
+}
+
+#name,
+#submitButton {
+
+    height: 4vh;
+    border: solid 0.2vh #333;
+    border-radius: 2vh;
+
+}
+
+#name {
+    width: 30%;
+}
+
+#button {
+    width: 40vh, ;
+}
+
+.colorField {
+    /* width: 25%; */
+    margin: 4vh 2vh 0vh -4vh;
+}
+
+.colorCopy {
+    /* width: 5%; */
+    margin: 0vh 4vh 0vh 0vh;
+}
