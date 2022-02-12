@@ -1,0 +1,46 @@
+body,
+html {
+    background-color: white;
+    font-family: 'Cousine', monospace;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-align: center;
+
+}
+
+.content {
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.content img {
+    width: 10%;
+    height: auto;
+    flex: 1 0 20%;
+    margin: 4vh;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 8vh;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.headline{
+    margin-top: 20vh;
+}
