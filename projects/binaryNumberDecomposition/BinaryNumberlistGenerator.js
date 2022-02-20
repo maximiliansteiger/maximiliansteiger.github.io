@@ -14,7 +14,7 @@ document.getElementById("buttonNumbers").addEventListener("click", function () {
     numberArray = numberArray.map(number => parseInt(number));
 
     let res = bitCountArrayToNumberArray(numberArrayToBitCountArray(numberArray));
-
+    document.getElementById("textArea").value = res.join(',');
     document.getElementById("result").innerHTML = '<div class="result-item">' + res.join('</div><div class="result-item">') + '</div>';
     console.log(numberArrayToBitCountArray(numberArray));
     console.log(res);
@@ -82,4 +82,10 @@ function bitCountArrayToNumberArray(bitsCount) {
         tempString = "";
     }
     return resultArray;
+}
+
+function copyToClipBoard() {
+    var content = document.getElementById('textArea');
+    content.select();
+    document.execCommand('copy');
 }
