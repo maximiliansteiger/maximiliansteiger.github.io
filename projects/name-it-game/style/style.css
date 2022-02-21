@@ -1,0 +1,126 @@
+body {
+    background-color: #04243B;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.information {
+    display: flex;
+    justify-content: right;
+}
+
+#infoButton {
+    width: 10vh;
+    height: 10vh;
+}
+
+#informationtext {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border-radius: 3vh;
+    width: 50%;
+    height: 100%;
+    padding: 8vh;
+    z-index: 50;
+    overflow: auto;
+    visibility: hidden;
+    display: table;
+}
+
+
+.gameRules {
+    text-align: justify;
+    font-size: 3vh;
+}
+
+.gamemodes {
+    font-weight: bold;
+    color: #04243B;
+}
+
+#header,
+#old-header,
+#background-header1,
+#background-header2 {
+    position: fixed;
+    top: 12vh;
+    background-color: white;
+    border-radius: 3vh;
+    width: 50%;
+    height: 45vh;
+    box-shadow: .1vh .1vh 4vh .1vh rgba(0, 0, 0, 0.733);
+    padding: 8vh;
+
+}
+
+#header {
+    z-index: 20;
+}
+
+#old-header {
+    z-index: 19;
+}
+
+#background-header1 {
+    z-index: 10;
+    transform: rotate(5deg);
+}
+
+
+#background-header2 {
+    z-index: 9;
+    transform: rotate(-7deg);
+}
+
+#topic,
+#old-topic {
+    font-size: 4em;
+    margin-top: 10vh;
+    margin-bottom: auto;
+}
+
+#animationCheckbox{
+    background-color: #04243B;
+    border-radius: 1vh;
+    width: 4vw;
+    height: 4vh;
+
+}
+
+#ckeckboxText {
+    font-size: 4vh;
+}
+
+#nextButton {
+    position: absolute;
+    top: 80vh;
+    text-align: center;
+    width: 30vh;
+    height: 10vh;
+    border: none;
+    box-shadow: .1vh 1.5vh 1.6vh .1vh rgba(0, 0, 0, 0.2);
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: #fff;
+    background: #1D768F;
+    border-radius: 1.5vh;
+    z-index: 21;
+}
+
+#nextButton:hover {
+    background: #2493b2;
+}
+
+#nextButton:active {
+    transform: translateY(.5vh);
+}
