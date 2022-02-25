@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constantsmemorizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="headline">
+        <h1>Constants Memorizer</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="constantsGrid">
+
+            <div class="constant" id="PI" onclick="getconstant('PI')">π</div>
+            <div class="constant" id="Golden_ratio" onclick="getconstant('Golden_ratio')">Φ</div>
+            <div class="constant" id="Eulers_number" onclick="getconstant('Eulers_number')">e</div>
+            <div class="constant" id="Pythagoras_constant" onclick="getconstant('Pythagoras_constant')">√2</div>
+            <div class="constant" id="Theodorus_constant" onclick="getconstant('Theodorus_constant')">√3</div>
+            <div class="constant" id="Euler_Mascheroni_constant" onclick="getconstant('Euler_Mascheroni_constant')">γ
+            </div>
+            <div class="constant" id="Meissel_Mertens_constant" onclick="getconstant('Meissel_Mertens_constant')">M1
+            </div>
+            <div class="constant" id="Omega_constant" onclick="getconstant('Omega_constant')">Ω</div>
+            <div class="constant" id="Hafner_Sarnak_McCurley_constant"
+                onclick="getconstant('Hafner_Sarnak_McCurley_constant')">σ</div>
+            <div class="constant" id="Catalans_constant" onclick="getconstant('Catalans_constant')">K</div>
+            <div class="constant" id="Conways_constant" onclick="getconstant('Conways_constant')">λ</div>
+            <div class="constant" id="Plastic_constant" onclick="getconstant('Plastic_constant')">ρ</div>
+            <div class="constant" id="Fransén_Robinson_constant" onclick="getconstant('Fransén_Robinson_constant')">F
+            </div>
+            <div class="constant" id="Reciprocal_Fibonacci_constant"
+                onclick="getconstant('Reciprocal_Fibonacci_constant')">Ψ</div>
+
+        </div>
+    </div>
+
+    <div class="otherContent">
+
+        <div class="displayConstant notVisible">
+            <button class="backToMenu2" onclick="backToMenu()">back to menu</button>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="content">
+
+
+        <div class="hiddenPage notVisible">
+
+            <div class="nammeAndCounter">
+                <div id="symbol"></div>
+                <h1 id="counter">0</h1>
+            </div>
+
+            <div class="digitsDisplay">
+                <h1 id="digits"></h1>
+
+
+            </div>
+
+
+            <div class="numberPadGrid ">
+                <button class="number" onclick="addDigit('1')">1</button>
+                <button class="number" onclick="addDigit('2')">2</button>
+                <button class="number" onclick="addDigit('3')">3</button>
+                <button class="number" onclick="addDigit('4')">4</button>
+                <button class="number" onclick="addDigit('5')">5</button>
+                <button class="number" onclick="addDigit('6')">6</button>
+                <button class="number" onclick="addDigit('7')">7</button>
+                <button class="number" onclick="addDigit('8')">8</button>
+                <button class="number" onclick="addDigit('9')">9</button>
+                <div></div>
+                <button class="number" onclick="addDigit('0')">0</button>
+
+
+            </div>
+
+            <button class="playagain notVisible" onclick="playAgain()">try again</button>
+            <button class="backToMenu notVisible" onclick="backToMenu()">back to menu</button>
+            <button class="showConstant notVisible" onclick="showConstant()">show constant</button>
+            <button class="learnMore notVisible" onclick="learnMore()">learn more</button>
+            
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

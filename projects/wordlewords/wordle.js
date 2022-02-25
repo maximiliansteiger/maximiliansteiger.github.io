@@ -12970,7 +12970,6 @@ let words = ["aahed",
     "zygon",
     "zymes",
     "zymic"];
-
 let possibleSolutions = ["cigar",
     "rebut",
     "sissy",
@@ -15367,6 +15366,15 @@ function Update() {
 
     document.querySelector(".words").innerHTML = (wordsTemp.length != 0) ? `${wordsTemp.join("  ")}` : "No words found";
 }
+
+
+
+
+
+
+                
+
+
 
 
 //functions
