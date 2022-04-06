@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="DC.Title" content="Void Wrapper classes">
+    <meta name="DC.Creator" content="Maximilian Steiger">
+    <meta name="DC.Subject" content="Void, Wrapper class, java">
+    <meta name="DC.Description" content="Have you heard of void wrapper classes and do you know what to use them for?">
+    <meta name="DC.Publisher" content="Maximilian Steiger">
+    <meta name="DC.Contributor" content="Maximilian Steiger">
+    <meta name="DC.Date" content="2022-04-05">
+    <meta name="DC.Type" content="Text">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Identifier" content="http://maximiliansteiger.github.io">
+    <meta name="DC.Source" content="Developer-Sites">
+    <meta name="DC.Language" content="de">
+    <meta name="DC.Relation" content="Section">
+    <meta name="DC.Rights" content="Alle Rechte liegen beim Autor">
+
+<!-- Primary Meta Tags -->
+<title>PROJECTS</title>
+<meta name="title" content="PROJECTS">
+<meta name="description" content="">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maximiliansteiger.github.io/">
+<meta property="og:title" content="PROJECTS">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://maximiliansteiger.github.io/">
+<meta property="twitter:title" content="PROJECTS">
+<meta property="twitter:description" content="">
+<meta property="twitter:image" content="">
+
+
+
+
+
+
+
+    <title>Void Wrapper classes</title>
+    <link rel="stylesheet" href="../thoughts.css">
+    <link rel="stylesheet" href="../../nav.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">ABOUT ME</a></li>
+
+            <li><a href="../thoughtsTemplate.html">THOUGHTS</a></li>
+
+            <li><a href="#projects">PROJECTS</a></li>
+
+            <li><a href="../imageGallery/imageGallery.html">IMAGES</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+        <div class="headline">
+            <h1>THE VOID WRAPPER CLASS IN JAVA</h1>
+
+        </div>
+
+        <div class="text">
+            <p>In Java Wrapper classes are used to treat primitive data types like objects.
+                int becomes Integer and boolean becomes Boolean. But did you know that also the keyword void has a
+                wrapper class? We will look at when and how this is useful.</p>
+
+            <h2>OBJECT ORIENTED?</h2>
+
+            <p>If you are not familiar with Wrapper classes in Java already, I try to give a quick explanation. You
+                might know that Java is a Object
+                oriented programming language. What that means is that after creating a class you can use the class as a
+                template for multiple Objects.</p>
+
+            <p>Lets say you have a class car which includes a name,brand and a price. Using the new keyword you can
+                create all sorts of cars and access the methods within the object as seen in the picture below</p>
+
+            <div class="image">
+                <img src="./images/cars.png" alt="">
+            </div>
+
+            <h2>WHAT IS A WRAPPER CLASS</h2>
+
+            <p>In Java there are two types of data types, primitive and reference data types. the reference data types
+                already reference to an object like an Array, Strings are also reference data types.
+                The 8 primitive data types like int,double and boolean are commonly used in Java. Sometimes you want
+                a data type like int to act like an object, for example if you want a ArrayList of int you need to pass
+                Integer as the data type. Wrapper Classes are used to convert these primitive data
+                types into objects.
+            </p>
+
+
+
+
+
+
+            <h2>So.. what is a Void wrapper class</h2>
+
+            <p>The void wrapper class has been around for some time now. It was first implemented in java 1.1 the
+                version between Oak and Playground. It was originally created for java reflection but now it is also
+                used in the context of generics which I will come to in a moment.
+                <br>
+                The void wrapper class is not a wrapper class in true essence, since void is not considered a primitive
+                datatype it is merely a java keyword even doe the eclipse documentation lists void as primitive data
+                type and the function isPrimitive returns true when called by Void.Type.
+                This is a debate for another time we wont get into that right now. Just bare in mind that void is not a
+                primitive data type.
+            </p>
+
+            <div class="image">
+                <img src="./images/isPrimitive.png" alt="">
+            </div>
+
+
+            <p>
+                Said so the Void class can not be initialized using the new keyword neither does it store a value of
+                type void which is stated in the Void class itself. The only useful content inside the Void class is the
+                static variable TYPE which references to the getPrimitiveClass method inside the class Class.
+            </p>
+
+            <div class="image">
+                <img src="./images/VoidClass.png" alt="">
+            </div>
+
+            <p>
+                According to the javadoc the void wrapper class exists because some times you may need to represent the
+                keyword void as an object.
+                That is kind of confusing because as just said it can not be initialized caused by the constructor in
+                the Void class being declared private. The Void class is also a final class and because of this none of
+                the included features can be inherited by another class, it is also not possible to extend a final class
+
+                <br>
+
+                One reasons to use the Wrapper class Void is to set the return type of a method as Void and
+                still return something different to the keyword void which does not require a return statement at the
+                end of the function. In the case of return type Void the only valid return value would be null.
+                A real life example of this is the doPrivileged method in the AccessController class, you can check out
+                <a href="https://docs.oracle.com/javase/7/docs/api/java/security/AccessController.html">here</a>
+                generally speaking Void is widely used for callback functions when you need to pass a value that does
+                not exist.
+            </p>
+
+            <div class="image">
+                <img src="./images/returnType.png" alt="">
+            </div>
+
+            <h2>Generics</h2>
+            <p>
+                This is also where generics come into play. Since java 5 after generics were implemented the void
+                wrapper class can also be used to indicate that classes do not return a value. More broadly what that
+                means is if something requires you to provide a return type but nothing is returned you can use the void
+                wrapper class to indicate that nothing is returned. a good example of this is implementing Callable.
+                Callable are further explained <a
+                    href="https://www.tutorialspoint.com/Callable-and-Future-in-Java">here</a>.
+
+                Void is also sometimes used in a Map, indicating that the key is not used and the value is returned.
+            </p>
+
+
+            <div class="image">
+                <img src="./images/map.png" alt="">
+            </div>
+
+            <h2>Reflection</h2>
+
+            <p>
+                Reflection is the ability to inspect the class structure of an object at runtime. Because I am not an
+                expert on java reflection I will not go into detail here. One implementation of the void wrapper class i
+                found was in the java reflection API. This api uses Void.TYPE to check the return type of a method.
+                <br>
+                assert(handleForTest.getReturnType() == Void.TYPE);
+                <br>
+
+
+            </p>
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

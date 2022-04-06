@@ -1,0 +1,53 @@
+body {
+    background-color: #ffffff;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+}
+
+.headline {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+div {
+    margin-bottom: 10vh;
+}
+
+/* center this div */
+
+.content {
+    /* box-shadow: black 0vh 0vh 4vh .5vh; */
+    padding: 5vh;
+    margin: 10vh 30vh;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    margin: 0vh 15vh;
+}
+
+.imageSmaller img {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-right: 5vh;
+}
+
+h2 {
+
+    margin-left: 3vh;
+    margin-top: 10vh;
+}
+
+
+
+    
