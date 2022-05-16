@@ -2,7 +2,7 @@ body {
     background-color: #ffffff;
     text-align: justify;
     color: rgb(0, 0, 0);
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     margin: 0 auto;
 }
 
@@ -14,7 +14,7 @@ body {
 
 p {
     font-size: 1.5em;
-    text-align: justify;
+    text-align:justify;
 }
 
 div {
@@ -48,6 +48,38 @@ h2 {
     margin-top: 10vh;
 }
 
+.content ul{
+    padding: 1vh 0vh;
+    list-style-type: none;
+}
 
 
+.content ul li{
+    background-color: rgba(128, 128, 128, 0.329);
+    height: auto;
+    margin: 3vh;
+    padding: 5vh;
+    cursor: pointer;
+    box-shadow: inset rgba(128, 128, 128, 0.329) 0vh 0vh 10vh .1vh;
+}
+
+.content ul li:hover{
+    animation: hoverani 8s 1;
     
+}
+@keyframes hoverani {
+    0% {
+        background-color: rgba(128, 128, 128, 0.329);
+    }
+    50% {
+        background-color: rgba(99, 99, 99, 0.603);
+    }
+    100% {
+        background-color: rgba(95, 95, 95, 0.753);
+    }
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
