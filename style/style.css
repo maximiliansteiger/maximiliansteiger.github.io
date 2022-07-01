@@ -19,7 +19,7 @@ h1 {
 
 
 .indexBackground {
-  background-image: url("./images/backgroundIMG.png");
+  background-image: url("../images/backgroundIMG.png");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
